@@ -1,0 +1,12 @@
+html * {
+    font-family: "BankGthd";
+}
+
+.footer-style {
+    background-color: rgb(48, 48, 48);
+    height: 150px;
+}
+
+.footer-text-style {
+    color: rgb(200, 200, 200);
+}

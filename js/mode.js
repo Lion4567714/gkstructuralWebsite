@@ -1,5 +1,32 @@
-var modeButton = document.getElementById("mode-button");
+var darkMode = 0;
+var modeIcon = document.getElementById("mode-icon");
+var backgrounds = document.getElementsByClassName("dm-bg");
+var borders = document.getElementsByClassName("dm-bd");
+var texts = document.getElementsByClassName("dm-tx");
 
-modeButton.onClick() = function() {
-    modeButton.style.background = "green";
+function darkModeButtonPress() {
+    modeIcon.classList.toggle("bi-sun");
+    modeIcon.classList.toggle("bi-moon");
+    
+    for (let border of borders) {
+        border.classList.toggle("border-white");
+    }
+
+    if (darkMode == true) {
+        for (let background of backgrounds) {
+            background.style.backgroundColor = "white";
+        }
+        for (let text of texts) {
+            text.style.color = "black";
+        }
+        darkMode = false;
+    } else {
+        for (let background of backgrounds) {
+            background.style.backgroundColor = "#444";
+        }
+        for (let text of texts) {
+            text.style.color = "white";
+        }
+        darkMode = true;
+    }
 }

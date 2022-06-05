@@ -1,12 +1,38 @@
+/* May need to change src on upload to url to domain */
+@font-face {
+    font-family: "BankGthd";
+    src: url("/font/BankGthd.ttf") format("truetype");
+}
+
 html * {
     font-family: "BankGthd";
 }
 
-.footer-style {
-    background-color: rgb(48, 48, 48);
-    height: 150px;
+.divider {
+    background-color: rgba(0, 0, 0, .1);
+    height: 3vh;
 }
 
-.footer-text-style {
+.dm-bg {
+    background-color: white;
+    transition: background-color 0.5s;
+}
+
+.dm-tx {
+    color: black;
+    transition: color 1.5s;
+}
+
+.footer-style {
+    background-color: rgb(48, 48, 48);
+    height: 25vh;
+}
+
+.footer-style-text {
     color: rgb(200, 200, 200);
+}
+
+.header-style {
+    background-color:rgb(216, 216, 216);
+    height: 10vh;
 }

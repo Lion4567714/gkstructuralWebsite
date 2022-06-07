@@ -8,6 +8,17 @@ html * {
     font-family: "BankGthd";
 }
 
+html {
+    visibility: visible;
+}
+
+#loader {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    margin: 0;
+}
+
 .divider {
     background-color: rgba(0, 0, 0, .1);
     height: 3vh;
@@ -33,6 +44,6 @@ html * {
 }
 
 .header-style {
-    background-color:rgb(216, 216, 216);
+    background-color: rgb(172, 172, 172);
     height: 10vh;
 }

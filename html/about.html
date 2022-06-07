@@ -1,9 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <title>GKSE About</title>
 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="/js/load.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('#header-id').load('/html/header.html');
+                $('#footer-id').load('/html/footer.html');
+                updateNavbar();
+            });
+        </script>
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="/css/style.css" type="text/css">
     </head>
-    <body>
-        <h1>About Page</h1>
+
+    <body class="dm-bg">
+        <div id="header-id"></div>
+        <main>
+            <div class="container-fluid m-3">
+                <h1 class="dm-tx">GK Structural Engineering</h1>
+                <div class="container-fluid m-3 border-top border-dark dm-bd"> 
+                    <h3 class="dm-tx">Subheader</h3>
+                    <div class="container-fluid m-1 border border-dark dm-bd">
+                        <h6 class="dm-tx">Other text</h6>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <div id="footer-id"></div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+        <script src="/js/mode.js"></script>
     </body>
 </html>

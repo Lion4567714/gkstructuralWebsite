@@ -1,10 +1,11 @@
 var darkMode = 0;
-var modeIcon = document.getElementById("mode-icon");
-var backgrounds = document.getElementsByClassName("dm-bg");
-var borders = document.getElementsByClassName("dm-bd");
-var texts = document.getElementsByClassName("dm-tx");
 
 function darkModeButtonPress() {
+    var modeIcon = document.getElementById("mode-icon");
+    var backgrounds = document.getElementsByClassName("dm-bg");
+    var borders = document.getElementsByClassName("dm-bd");
+    var texts = document.getElementsByClassName("dm-tx");
+
     modeIcon.classList.toggle("bi-sun");
     modeIcon.classList.toggle("bi-moon");
     

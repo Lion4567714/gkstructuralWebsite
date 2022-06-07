@@ -45,5 +45,10 @@ html {
 
 .header-style {
     background-color: rgb(172, 172, 172);
-    height: 10vh;
+}
+
+.title-card {
+    filter: blur(3px);
+    max-height: 60vh;
+    object-fit: cover;
 }
